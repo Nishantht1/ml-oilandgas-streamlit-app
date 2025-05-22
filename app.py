@@ -8,6 +8,14 @@ model = joblib.load('oil_volume_model.pkl')
 st.title("Oil Volume Prediction App")
 st.markdown("🔮 Enter well parameters to predict expected oil production (BORE_OIL_VOL)")
 
+
+st.sidebar.header("Model Settings")
+target_choice = st.sidebar.selectbox(
+    "Select what to predict:",
+    ("BORE_OIL_VOL", "BORE_GAS_VOL", "BORE_WAT_VOL")
+)
+st.write(f"You selected: {target_choice}")
+
 # Input fields
 avg_whp_p = st.number_input("AVG_WHP_P (Wellhead Pressure)", min_value=0.0)
 avg_choke_size_p = st.number_input("AVG_CHOKE_SIZE_P", min_value=0.0)
