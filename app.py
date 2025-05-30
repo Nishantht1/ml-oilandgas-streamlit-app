@@ -13,7 +13,7 @@ target_choice = st.sidebar.selectbox(
 
 # --- Select corresponding model based on dropdown ---
 model_file = {
-    "BORE_OIL_VOL": "oil_volume_model.pkl",
+    "BORE_OIL_VOL": "oil_volume_model_tuned.pkl",
     "BORE_GAS_VOL": "gas_volume_model.pkl",
     "BORE_WAT_VOL": "water_volume_model.pkl"
 }[target_choice]
