@@ -85,9 +85,3 @@ Auto‑redeploys on every `git push origin main`.
 ## ✍️ Author
 
 Nishanth
-
----
-
-## 📜 License
-
-This repo is for educational / demonstration purposes only.
